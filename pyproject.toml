@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pytracelog"
+version = "0.1.0"
+description = ""
+authors = ["Ilya Barinov <ilya.bv.2002@bk.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-logstash-async = "2.3.0"
+opentelemetry-sdk = "1.7.1"
+opentelemetry-exporter-jaeger-thrift = "1.7.1"
+opentelemetry-propagator-jaeger = "1.7.1"
+opentelemetry-instrumentation-logging = "0.26b1"
+opentelemetry-instrumentation-falcon = "0.26b1"
+opentelemetry-instrumentation-celery = "0.26b1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
